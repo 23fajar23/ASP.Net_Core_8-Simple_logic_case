@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            SortCharacter sortCharacter = new SortCharacter();
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine(" 1. Sort Character ");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~");
+            sortCharacter.run();
         }
     }
 }
