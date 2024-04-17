@@ -8,8 +8,8 @@ namespace ConsoleApp1
 {
     internal class SortCharacter
     {
-        public string[] vowels = ["a", "i", "u", "e", "o"];
-        public string procVowel(string param)
+        private string[] vowels = ["a", "i", "u", "e", "o"];
+        private string procVowel(string param)
         {
             List<string> list = new List<string>();
 
@@ -32,7 +32,7 @@ namespace ConsoleApp1
             return string.Join("", sortData(list));
         }
 
-        public string procConsonant(string param)
+        private string procConsonant(string param)
         {
             List<string> list = new List<string>();
 
@@ -62,7 +62,7 @@ namespace ConsoleApp1
             return string.Join("", sortData(list));
         }
 
-        public List<string> sortData(List<string> input)
+        private List<string> sortData(List<string> input)
         {
             List<string> distinctData = input.Distinct().ToList();
             List<string> sortedData = new List<string>();
